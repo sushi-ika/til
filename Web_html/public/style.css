@@ -1,0 +1,66 @@
+h1 {
+    background: red;
+}
+
+h1:hover{
+    background: blue;
+}
+
+/* すべてのc1クラスに適用 */
+.c1 {
+    background: blue;
+}
+
+/* i1のIDを持つタグに適用 */
+#i1 {
+    background: yellow;
+}
+
+/* divの中のpにのみ適用(子孫セレクタ) */
+div p {
+    background: green;
+}
+
+/* c2クラスを持つliのみに適用 */
+li.c2 {
+    background: green;
+}
+
+table {
+    border-collapse: collapse;
+}
+th{
+    border: solid 1px;
+    padding: 0.5em;
+}
+td {
+    border: solid 1px;
+    padding: 0.5em;
+}
+
+#kao_img{
+    width: 100px;
+    height: 150px;
+    border: solid green 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.start_float{
+    float: left;
+}
+.start_clear{
+    clear: both;
+}
+
+li[target]{
+    background: red;
+}
+
+div.sample{
+    border: 1px solid #000000;
+}
+
+p.inherit{
+    border: inherit;
+}
