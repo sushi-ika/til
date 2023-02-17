@@ -8,5 +8,6 @@ public class Ex07_1 {
 		Zenhan.doIsami();
 		comment.Kouhan.callShimobe();
 		comment.Kouhan.goBattle();
+		Zenhan.doIsami();
 	}
 }
