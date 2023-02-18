@@ -9,7 +9,5 @@ public class Ex07_1 {
 		comment.Kouhan.callShimobe();
 		comment.Kouhan.goBattle();
 		Zenhan.doIsami();
-		int  i = 10;
-		assert i == 1;
 	}
 }
