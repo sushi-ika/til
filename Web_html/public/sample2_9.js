@@ -1,0 +1,1 @@
+const openDialog=()=>alert("OK");

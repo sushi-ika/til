@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>テンプレート</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>タイトル</h1>
+            <h2>サブタイトル</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <p>最終アクセス日時:<span id="time"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+    <script>
+        'use strict';
+        
+        const now = new Date;
+        const year = now.getFullYear();
+        const month = now.getMonth();
+        const date = now.getDate();
+        
+        const output = `${year}/${month + 1}/${date}`;
+        document.getElementById('time').textContent = output;
+    </script>
+</body>
+
+</html>
