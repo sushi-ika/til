@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>電卓入力画面</title>
+</head>
+<body>
+<form method="post" action="/output">
+<input type="number">
+<select>
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="×">×</option>
+<option value="÷">÷</option>
+</select>
+<input type="number">
+<input type="submit" value="=">
+</form>
+</body>
+</html>
