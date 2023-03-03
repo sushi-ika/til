@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>テンプレート</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>タイトル</h1>
+            <h2>サブタイトル</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h1>やることリスト</h1>
+                <ul id="list">
+                    
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+    <script>
+        'use strict';
+        
+        let todo = ['あ', 'い', 'う'];
+        todo.push('え');
+        for(let item of todo){
+            const li = `<li>${item}</li>`;
+            document.getElementById('list').insertAdjacentHTML('beforeend', li);
+        }
+
+    </script>
+</body>
+
+</html>
