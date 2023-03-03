@@ -18,9 +18,12 @@
 `$hoge = 1`
 `.md`
 
+```java:git.java
+String name = "Tanaka"
+System.out.println("Hellow, " + name + "!"); 
+
 ```
-System.out.println("Hellow, world!"); 
-```
+
 
 水平線
 ***
