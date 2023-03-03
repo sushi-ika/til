@@ -18,34 +18,9 @@
 `$hoge = 1`
 `.md`
 
-```java:git.java
+```
 System.out.println("Hellow, world!"); 
 ```
-```diff_java
-
-<details><summary>サンプルコード</summary>
-
-(上に空行が必要)
-
-```rb
-puts 'Hello, World'
-```
-</details>
-
-:::note info
-インフォメーション
-infoは省略可能です。
-:::
-
-:::note warn
-警告
-○○に注意してください。
-:::
-
-:::note alert
-より強い警告
-○○しないでください。
-:::
 
 水平線
 ***
