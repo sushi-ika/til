@@ -1,0 +1,6 @@
+ローカルホストアドレス
+http://localhost:8080/
+
+【cmdコマンド】
+netstat -nao  （TCP/IPの接続状況を調べる）
+netstat -ano | find "8080" （ポート番号8080番を使用しているプロセスを確認する）
