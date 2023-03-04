@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>電卓入力画面</title>
+</head>
+
+<body>
+    <div th:text="${session.count} + '回目の計算'"></div>
+    <form method="post" action="/output">
+        <input type="number" name="param1">
+        <select name="param3">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="×">×</option>
+            <option value="÷">÷</option>
+        </select>
+        <input type="number" name="param2">
+        <input type="submit" value="=">
+    </form>
+    <a href="/delete">回数削除</a>
+</body>
+
+</html>
