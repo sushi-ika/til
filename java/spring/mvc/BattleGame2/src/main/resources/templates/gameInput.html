@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>入力画面</title>
+</head>
+<body>
+<form method="post" action="/output">
+    自分の名前<input type="text" name="myName"><br>
+    自分のHP<input type="number" name="myHp"><br>
+    自分のMP<input type="number" name="myMp"><br>
+    敵の名前<input type="text" name="enName"><br>
+    敵のHP<input type="number" name="enHp"><br>
+    敵のMP<input type="number" name="enMp"><br>
+    <input type="submit" value="対戦">
+</form>
+</body>
+</html>
