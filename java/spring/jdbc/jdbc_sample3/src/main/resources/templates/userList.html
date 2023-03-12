@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー一覧画面</title>
+</head>
+
+<body>
+    <a href="/user/input">新規登録</a>
+    <form method="post" action="/user/list">
+        <input type="text" name="search" th:value="${search}">
+        <input type="submit" value="検索">
+        <table border="1">
+            <tr>
+                <th>ユーザーID</th>
+                <th>名前</th>
+                <th>編集</th>
+            </tr>
+            <tr th:each="item:${list}">
+                <td th:text="${item.user_id}"></td>
+                <td th:text="${item.name}"></td>
+                <td>
+                    <a href="/user/input" th:href="@{/user/input(user_id=${item.user_id})}">編集</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー情報入力画面</title>
+</head>
+
+<body>
+    <form method="post" action="/user/input" th:object="${userForm}">
+        <div th:errors="*{name}"></div>
+        <div th:errors="*{pass}"></div>
+        名前：<input type="text" name="name" th:value="*{name}"><br>
+        パスワード：<input type="text" name="pass" th:value="*{pass}"><br>
+        <input type="hidden" name="user_id" th:value="*{user_id}">
+        <input type="submit" value="登録">
+    </form>
+</body>
+
+</html>
