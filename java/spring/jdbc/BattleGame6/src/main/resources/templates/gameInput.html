@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>入力画面</title>
+</head>
+<body>
+<div th:text="${session.count} + 'ターン目'"></div>
+<form method="post" action="/input" th:object="${charaForm}">
+    <div th:errors="*{myName}"></div>
+    <div th:errors="*{myHp}"></div>
+    <div th:errors="*{myMp}"></div>
+    <div th:errors="*{enName}"></div>
+    <div th:errors="*{enHp}"></div>
+    <div th:errors="*{enMp}"></div>    
+    自分の名前<input type="text" name="myName" th:value="*{myName}"><br>
+    自分のHP<input type="number" name="myHp" th:value="*{myHp}"><br>
+    自分のMP<input type="number" name="myMp" th:value="*{myMp}"><br>
+    敵の名前<input type="text" name="enName" th:value="*{enName}"><br>
+    敵のHP<input type="number" name="enHp" th:value="*{enHp}"><br>
+    敵のMP<input type="number" name="enMp" th:value="*{enMp}"><br>
+    <input type="submit" value="対戦">
+</form>
+</body>
+</html>
