@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>終了画面</title>
+</head>
+
+<body>
+    自分の名前：<span th:text="${myName}"></span><br>
+    自分のHP：<span th:text="${myHp}"></span><br>
+    自分のMP：<span th:text="${myMp}"></span><br>
+    敵の名前：<span th:text="${enName} "></span><br>
+    敵のHP：<span th:text="${enHp}"></span><br>
+    敵のMP：<span th:text="${enMp}"></span><br>
+    <span th:text="${winner}"></span><br>
+    <a href="/input">戻る</a>
+</body>
+
+</html>

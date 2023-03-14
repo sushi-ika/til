@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>計算履歴画面</title>
+</head>
+
+<body>
+    <form method="post" action="/history">
+        <input type="date" name="date" th:value="${date}">
+        <input type="submit" value="検索">
+    </form>
+    <table border="1">
+        <tr>
+            <th>対戦結果</th>
+            <th>自分の名前</th>
+            <th>自分のHP</th>
+            <th>自分のMP</th>
+            <th>敵の名前</th>
+            <th>敵のHP</th>
+            <th>敵のMP</th>
+            <th>日時</th>
+        </tr>
+        <tr th:each="item:${history}">
+            <td th:text="${item.text}"></td>
+            <th th:text="${item.my_name}"></th>
+            <td th:text="${item.my_hp}"></td>
+            <td th:text="${item.my_mp}"></td>
+            <th th:text="${item.enemy_name}"></th>
+            <td th:text="${item.enemy_hp}"></td>
+            <td th:text="${item.enemy_mp}"></td>
+            <td th:text="${#dates.format(item.regist_date,'yyyy/MM/dd HH:mm:ss')}"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
